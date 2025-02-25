@@ -15,15 +15,15 @@ const data = [
 
     {
         name: 'Girls',
-        count: 53,
+        count: 43,
         pv: 2400,
         fill: '#FAE27C',
     },
     {
         name: 'Boys',
-        count: 53,
+        count: 72,
         pv: 4567,
-        fill: '#C3EBFA  ',
+        fill: '#C3EBFA',
     }
 ];
 
@@ -41,7 +41,7 @@ export default function CountChart() {
             <div className="bg-white  w-full h-full p-4 rounded-xl">
                 {/*  Title  */}
                 <div className="flex justify-between items-center">
-                    <h1>Students</h1>
+                    <h1 className="text-lg font-bold text-black">Students</h1>
                     <Image src="/moreDark.png" alt="" width={20} height={20}/>
                 </div>
 
