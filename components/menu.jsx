@@ -129,8 +129,8 @@ export default function Menu(){
 
                 {menuItem.items.map((item,itemIndex)=> {
 
-                    { if (item.visible.includes("student")){
-                        return <Link href={item.href} key={itemIndex} className="flex items-center gap-4 py-2 justify-center lg:justify-start text-gray-500">
+                    { if (item.visible.includes("teacher")){
+                        return <Link href={item.href} key={itemIndex} className="flex items-center gap-4 py-2 justify-center lg:justify-start text-gray-500 hover:bg-lamaSkyLight rounded-md px-1">
                             <Image src={item.icon} width={20} height={20} alt={item.label}  />
                             <span className="text-gray-800 hidden lg:block">{item.label}</span>
                         </Link>
