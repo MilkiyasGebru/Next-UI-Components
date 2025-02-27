@@ -127,14 +127,16 @@ export default function Menu(){
                     {menuItem.title}
                 </span>
 
-                {menuItem.items.map((item,itemIndex)=> (
+                {menuItem.items.map((item,itemIndex)=> {
 
+                    { if (item.visible.includes("student")){
+                        return <Link href={item.href} key={itemIndex} className="flex items-center gap-4 py-2 justify-center lg:justify-start text-gray-500">
+                            <Image src={item.icon} width={20} height={20} alt={item.label}  />
+                            <span className="text-gray-800 hidden lg:block">{item.label}</span>
+                        </Link>
+                } }
 
-                    <Link href={item.href} key={itemIndex} className="flex items-center gap-4 py-2 justify-center lg:justify-start text-gray-500">
-                        <Image src={item.icon} width={20} height={20} alt={item.label}  />
-                        <span className="text-gray-800 hidden lg:block">{item.label}</span>
-                    </Link>
-                ))}
+        })}
 
             </div>
         ))}
