@@ -3,7 +3,7 @@ import moment from 'moment'
 import "react-big-calendar/lib/css/react-big-calendar.css"
 
 const localizer = momentLocalizer(moment)
-
+//  Found a bug on the Big calendar
 export default function BigCalendar() {
 
      const calendarEvents = [
