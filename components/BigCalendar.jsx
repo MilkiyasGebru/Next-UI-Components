@@ -159,7 +159,7 @@ export default function BigCalendar() {
     }
 
     return (
-        <div className="h-[55%]">
+        <div >
             <Calendar
                 localizer={localizer}
                 events={calendarEvents}
