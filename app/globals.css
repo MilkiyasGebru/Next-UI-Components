@@ -33,3 +33,22 @@ body {
 .react-calendar__month-view__weekdays__weekday abbr {
   text-decoration: none;
 }
+
+.rbc-btn-group:first-child {
+  display: none !important;
+}
+
+.rbc-toolbar-label {
+  text-align: right !important;
+  padding: 0  20px !important;
+}
+
+.rbc-btn-group:last-child {
+  font-size: 13px !important;
+}
+
+.rbc-btn-group:last-child button{
+  border: none !important;
+  background-color : #f1f0ff;
+  margin-left: 2px;
+}
