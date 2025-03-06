@@ -151,7 +151,7 @@ const columns = [
     },
 ]
 export default function TeachersList(){
-
+    // This is to Render the Teachers Row only
     const renderRow = (item)=> (
         <tr key={item.id} className="border-b border-gray-200 even:bg-slate-50 text-sm hover:bg-lamaPurpleLight">
             <td className="flex items-center gap-4 p-2">
